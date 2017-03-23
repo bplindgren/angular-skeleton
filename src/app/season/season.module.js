@@ -1,14 +1,14 @@
-import { seasons } from './seasons.component'
-import { SeasonsService } from './seasons.service'
+import { season } from './season.component'
+import { SeasonService } from './season.service'
 import { seasonView } from './seasonView/seasonView.component'
 import { seasonViewService } from './seasonView/seasonView.service'
-import { configure } from './seasons.config'
+import { configure } from './season.config'
 
 export default
   angular
-    .module('seasons', [])
-    .component('seasons', seasons)
-    .service('$seasons', SeasonsService)
+    .module('season', [])
+    .component('season', season)
+    .service('$season', SeasonService)
     .component('seasonView', seasonView)
     .service('$seasonView', seasonViewService)
     .config(configure)

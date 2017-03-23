@@ -7,10 +7,7 @@ class AppController {
     this.$location = location
     this.$http = $http
     this.$sce = $sce
-    // $scope.recentGames = this.getRecentGames()
-    $scope.str = "stuff"
-
-    $scope.getRecentGames = function() {
+    this.recentGames = function() {
       let games = []
       this.$http({
         method: 'GET',
@@ -28,6 +25,9 @@ class AppController {
         return response
       })
     }
+
+    $scope.str = "stuff"
+
   }
 }
 
