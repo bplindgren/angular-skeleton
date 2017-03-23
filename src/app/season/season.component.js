@@ -9,7 +9,7 @@ class SeasonController {
     this.$scope = $scope
     $log.debug('SeasonController instantiated')
     let imagePath = 'https://www.i9sports.com/images/fullsite/sport-icons/SmallIconSport5.png'
-    $scope.s = $season.getSeasons()
+    this.seasons = $season.getSeasons()
   }
 }
 
