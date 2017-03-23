@@ -6,7 +6,8 @@ import ngMessages from 'angular-messages'
 import uiRouter from 'angular-ui-router'
 
 import bmfflHome from './home/home.module'
-import seasons from './seasons/seasons.module'
+import season from './season/season.module'
+import owner from './owner/owner.module'
 
 import { app } from './app.component'
 import { configure } from './app.config'
@@ -22,7 +23,8 @@ export default
       uiRouter,
 
       bmfflHome,
-      seasons
+      season,
+      owner
     ])
     .component('app', app)
     .config(configure)

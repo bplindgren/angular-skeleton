@@ -1,7 +1,7 @@
-import { seasons } from './seasons.states'
+import { season } from './season.states'
 
 /* @ngInject */
 export function configure ($stateProvider) {
   $stateProvider
-    .state(seasons)
+    .state(season)
 }
